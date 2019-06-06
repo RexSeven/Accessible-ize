@@ -1,0 +1,51 @@
+body {
+    color: teal;
+    text-align: right;
+  }
+  
+  #content02cOntainer {
+    background: black !important;
+    background: green;
+    padding: 23.4px;
+    
+  }
+
+  .button span {
+      color: red;
+      font-weight: bold;
+  }
+  
+  .thecontent321 {
+    color:rgba(255, 0, 0, 0.3); /* Modify the opacity to see containers more clear */
+    padding-left: 0;
+    padding-right: 700px; /* Center the content, change this value depending on the screen size */
+    text-align: right;
+  }
+  
+  #accessibilitygreatness {
+    font-size: 72.3px;
+    color: green;
+  }
+  
+  .make-text-go-to-the-left-for-fantastic-accessibility {
+    text-align: left;
+  }
+  
+  .warrior {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .warrior-amend {
+    z-index: 2;
+  }
+  
+  .this-is-for-developer-use-only-dont-show-it {
+    display: block;
+  }
+  
+  .this-is-for-developer-use-only-dont-show-it.active {
+    display: none;
+  }

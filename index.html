@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="accessible">
+
+<!-- 
+***************************** Website Description ************************************ 
+    * This website can be used as a template/framework for websites that need to be ready for accessibility.
+    * Ensure all users feel catered for by using this frame work.
+    * 
+    '***************************** Bug fixes ***********************************************
+    *  Include web console debugger to easily test if the web browser console is working.
+    *  Fix issue with the website warrior appearing below the main div
+    *
+-->
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accessible website</title>
+    <!-- Call in the coulors to let people see things better with their eyes -->
+    <link rel="stylesheet" href="coloursandstuff.css" />
+    <!-- Load some of the scripts  -->
+    <script src="scriptz.js"></script>
+</head>
+
+<body>
+    <!-- Button to allow those with accessibility needs to see how the webpage is constructed -->
+    <button class="button" style="float: left; padding: 1rem 3em;">See how the page is made <br> <span>(for advanced developers only)</span></button>
+    <div style="clear: both;"></div>
+
+
+    <p id="accessibilitygreatness"></p>
+<!-- Script to ensure users really want to visit the website -->
+    <script>
+        // Don't bully users into visiting the website, let them have the choice to view the content or not.
+        var do_you_wish_to_visit_this_website_everyone_should_have_a_choice;
+        // Show the website if they want to see it
+        if (confirm("Palease click ok to visit this website")) {
+            do_you_wish_to_visit_this_website_everyone_should_have_a_choice = "Great, you are now visiting this website.";
+            //Let the user know they are now visiting the website
+            document.getElementById("accessibilitygreatness").innerHTML = do_you_wish_to_visit_this_website_everyone_should_have_a_choice;
+        } else {
+            // If the user doesnt wish to view the website then no problem, refresh the page to start the notices again to ensure they're not rushed into any rash decisions
+            window.location.href = window.location.href;
+        }
+    </script> -->
+
+
+    <!-- This is the main container -->
+    <div id="content02cOntainer" class="make-text-go-to-the-left-for-fantastic-accessibility">
+        <!-- This is the content of the main container -->
+        <h2 class="this-is-for-developer-use-only-dont-show-it active">Main container</h2>
+        <div id="content02cOntainer" class="make-text-go-to-the-left-for-fantastic-accessibility">
+            <h1 class="this-is-for-developer-use-only-dont-show-it active">Container</h1>
+            <div id="content02cOntainer" class="make-text-go-to-the-left-for-fantastic-accessibility">
+                <h1 class="this-is-for-developer-use-only-dont-show-it active">Another container</h1>
+            </div>
+            <div id="content02cOntainer" class="make-text-go-to-the-left-for-fantastic-accessibility">
+                <h1 class="this-is-for-developer-use-only-dont-show-it active">Another container</h1>
+            </div>
+            <div class="thecontent321">
+                <!-- Add all of your content here -->
+                
+                <h1>Welcome to the Website</h1>
+                <span><p class="make-text-go-to-the-left-for-fantastic-accessibility">Looking for a ready made accessible webpage? We know it's not easy to build an accessible website so i've put together this website template to speed up your development proccess.</p></span>
+                <!-- DO NOT ADD ANY CONTENT AFTER THIS LINE-->
+            </div>
+            <div id="content02cOntainer" class="make-text-go-to-the-left-for-fantastic-accessibility">
+                <h1 class="this-is-for-developer-use-only-dont-show-it active">Another container</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="warrior warrior-amend"><!-- Warrior amend class added to ensure warrior is always visible -->
+        <img src="https://forums.tomshardware.com/data/avatars/m/2171/2171721.jpg?1550146744" 
+        alt="You are a website warrior, animation of a skeliton wearing a pink hat. The skeliton is blue and holds a sword in his right hand. 
+        He has no left hand and many consider him to also be a website warrior.">
+    </div>
+
+    <script>
+        // code used to power the website structure button
+        var helptheblind = document.getElementsByClassName('this-is-for-developer-use-only-dont-show-it active')
+        var button = document.querySelector('.button')
+
+        if (helptheblind) {
+            button.addEventListener('click', _removeClasses)
+        }
+
+        function _removeClasses() {
+            helptheblind[0].classList.remove('active')
+            if (helptheblind[0]) _removeClasses()
+        }
+    </script>
+</body>
+
+</html>
