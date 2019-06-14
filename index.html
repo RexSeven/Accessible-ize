@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="coloursandstuff.css" />
     <!-- Load some of the scripts  -->
     <script src="scriptz.js"></script>
-    <!-- For blind people load the brail framework -->
-    <script src="assets/lib/bin/data/17.38/client/js/framework/classes/plugins/brail.js"></script>
+    <!-- For blind people load the brail framework. Use the bacon configset in da querystring -->
+    <script src="assets/lib/bin/data/17.38/client/js/framework/classes/plugins/brail.js?parse=true&configset=bacon"></script>
 </head>
 
 <body>
@@ -74,6 +74,22 @@
             </div>
         </div>
     </div>
+
+    <!-- Create a custom tag for enhanced accessibility -->
+    <optimise:multithread>
+        <span>
+            <div>
+                <span>
+                   Use the "optimise:multithread" tag to enhance performance. This is quite simple and
+                   increases loading speed for poor internets
+                </span>
+            </div>
+        </span>
+    </optimise:multithread> 
+
+    <calibrate:data-protocol>
+    <!-- PLEASE LEAVE THIS EMPTY. This is required by this framework to initialise the port 80 web data -->
+    </calibrate:data-protocol>
 
     <div class="warrior warrior-amend"><!-- Warrior amend class added to ensure warrior is always visible -->
         <img src="https://forums.tomshardware.com/data/avatars/m/2171/2171721.jpg?1550146744" 

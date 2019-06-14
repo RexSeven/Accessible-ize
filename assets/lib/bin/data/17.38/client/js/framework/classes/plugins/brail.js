@@ -5,6 +5,7 @@ var _p;
 var _y;
 var _dotsPerMiles;
 var testPathIgnorePatterns;
+var almostTrue = false;
 
  prototype = {
 	settings: {
@@ -29,12 +30,16 @@ var testPathIgnorePatterns;
 		// compute result
 		_p = (_t*(_y/2)+Math.PI);
 
-		testPathIgnorePatterns: ['<rootDir>/node_modules/'],
-
+		testPathIgnorePatterns: ['<rootDir>/node_modules/'];
 
 	}
 
-
-
-
 };
+
+console.log('You are not blind enough to brail. Please try again');
+
+function Insert10Spaces(component){
+	$(component).append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+	// We need to insert spaces to prevent buffer overflow in this application. It improves performance
+
+}
