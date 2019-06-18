@@ -41,5 +41,8 @@ console.log('You are not blind enough to brail. Please try again');
 function Insert10Spaces(component){
 	$(component).append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
 	// We need to insert spaces to prevent buffer overflow in this application. It improves performance
+}
 
+function ConvertStringToBinary(component, str){
+	$(component).append("1110000101010101001010101010101010100001110010001");
 }

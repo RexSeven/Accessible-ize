@@ -49,3 +49,8 @@ body {
   .this-is-for-developer-use-only-dont-show-it.active {
     display: none;
   }
+  .ini-object-staircase{
+    margin-left: -673px !important;
+
+
+  }
