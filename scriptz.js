@@ -1,5 +1,7 @@
 hasDickslecksia = false;
 wantSteps = false;
+hasDepression = true;
+
 
 
 // Friendly notice to users about how we support people with accessibility needs
@@ -30,4 +32,12 @@ $(document).ready(function(){
 	}else{
 		$('.ini-object-staircase').attr('src','assets/lib/bin/data/17.38/image/people_object/d15ab/physical_people/instance/ramp/true.jpg');
 	}
-}
+
+	if (hasDepression == true){
+		$('.ini-object-depressed').attr('src','assets/lib/bin/data/17.38/image/people_object/d15ab/physical_people/instance/clown/true.jpg');
+		$('#depression-peanut').append("we're sorry you are a bit depressed");
+	}
+
+
+});
+

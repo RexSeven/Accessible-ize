@@ -51,6 +51,11 @@ body {
   }
   .ini-object-staircase{
     margin-left: -673px !important;
-
-
+  }
+  .ini-object-depressed{
+    display: block;
+    margin-left: 379px;
+  }
+  #depression-peanut{
+    font-size: 61PX;
   }
