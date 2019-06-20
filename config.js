@@ -18,7 +18,7 @@ ParseBanyanVinesCompatibility = BanyanVinesConfigSet.ParseEnumerationSuppression
 Emulation = RealtimeEmulation.DualThreadEmulation;
 
 // Switches the website warrior regulation system settings - options are: Strict, Relaxed, Off 
-WebsiteWarrior = WebWarriorMode.Off;
+WebsiteWarrior = WebWarriorMode.Strict;
 
 // Advanced Developer Features
 EnableDebuggingConsole = true;
@@ -26,13 +26,14 @@ EnableDebuggingConsole = true;
 
 // Basic Accessibility Features
 ShowSteps = false;
-ShowRamp = false;
+ShowRamp = true;
 EnableDepressionMode = false;
 DyckslecksiaDetectionSystem = false;
 DenyGender = GenderType.Male;
 
 // Text Customization
 DocumentTitle = "Accessible Website";
+WelcomePageTitle = "Eggs";
 
 
 //Feature TODO: Amputee

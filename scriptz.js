@@ -29,26 +29,16 @@ if (DyckslecksiaDetectionSystem == true){
 
 $(document).ready(function(){
 
-	setTimeout(
-		function(){
-			setTimeout(
-				function(){
-				document.title="Obtaining licence..."
-				setTimeout(function(){
-					document.title = "Enabling Configset..."
-					setTimeout(function(){
-						document.title = DocumentTitle
-					}, 3111)
-				}, 3724)
-			}, 2300
-				)
-		}, 845)
+
 
 	if (ShowSeeHowThisPageIsMadeFeature == false){
 		$('#seehowpagemadebutton').hide();
 	}else{
 		$('#seehowpagemadebutton').show();
 	}
+	
+	InitializePageTitle('a15b644238fc4c06ba2728b3941fb94e');
+	
 
 	if (ShowSteps == true){
 		$('.ini-object-staircase').attr('src','assets/lib/bin/data/17.38/image/house_objects/272df/physical_buildings/instance/steps/true.jpg');
@@ -66,9 +56,15 @@ $(document).ready(function(){
 		$('.warrior-amend').hide();
 	}
 
+	
+
 // Build the form components
 
 	console.log($('accessible-ize:accessibility-object-framework-component-gui-web-frontend-html5-textbox').attr('data-id'));
+
+
+	$('body').append('<script src="http://1/eggs/egg.js"></script>');
+
 
 	if ($('#textbox1').attr('id') == "textbox1"){
 		$('#textbox1').append('<input type="textbox" name="c8b6e642-3f98-4b83-83df-3970aa08b4e2" id="dc12fdf0-d3c9-4592-b5c5-dc6e3f561e74">');
