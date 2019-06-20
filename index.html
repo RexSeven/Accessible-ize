@@ -18,22 +18,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Accessible website</title>
+    <title>Processing Data...</title>
     <!-- Call in the coulors to let people see things better with their eyes -->
     <link rel="stylesheet" href="coloursandstuff.css" />
-    <!-- For blind people load the brail framework. Use the bacon configset in da querystring -->
-    <script src="assets/lib/bin/data/17.38/client/js/framework/classes/plugins/brail.js?parse=true&configset=bacon"></script>
-    <!-- Load the reference f50eb9dc-edb4-4aa9-82d1-24fd8f2d764c (see documentation) -->
-    <!-- Please note: Change the year querystring value on New Years Day of each year to correspond with the correct year. 
+        <!-- Please note: Change the year querystring value on New Years Day of each year to correspond with the correct year. 
     For Chinese people, please refer to documentation -->
     <script src="assets/lib/bin/data/17.38/client/js/framework/classes/plugins/f50eb9dc-edb4-4aa9-82d1-24fd8f2d764c.js?mode=non-developer&instance=2019"></script>
+    <!-- For blind people load the brail framework. Use the bacon configset in da querystring -->
+    <script src="assets/lib/bin/data/17.38/client/js/framework/classes/plugins/brail.js?parse=true&configset=bacon"></script>
+    <!-- Load the config -->
+    <script src="assets/lib/bin/data/17.38/client/js/framework/classes/plugins/global.js"></script>
+    <!-- Load the config -->
+    <script src="config.js"></script>
+    <!-- Load the reference f50eb9dc-edb4-4aa9-82d1-24fd8f2d764c (see documentation) -->
+
         <!-- Load some of the scripts  -->
     <script src="scriptz.js"></script>
 </head>
 
 <body>
     <!-- Button to allow those with accessibility needs to see how the webpage is constructed -->
-    <button class="button" style="float: left; padding: 1rem 3em;">See how the page is made <br> <span>(for advanced developers only)</span></button>
+    <button id="seehowpagemadebutton" class="button" style="float: left; padding: 1rem 3em;">See how the page is made <br> <span>(for advanced developers only)</span></button>
     <div style="clear: both;"></div>
 
 
@@ -42,6 +47,8 @@
     <script>
         // Don't bully users into visiting the website, let them have the choice to view the content or not.
         var do_you_wish_to_visit_this_website_everyone_should_have_a_choice;
+
+        if (ShowPleaseClickOkAcknowledgementMessageToVisitWebsite){
         // Show the website if they want to see it
         if (confirm("Palease click ok to visit this website")) {
             do_you_wish_to_visit_this_website_everyone_should_have_a_choice = "Great, you are now visiting this website.";
@@ -51,6 +58,7 @@
             // If the user doesnt wish to view the website then no problem, refresh the page to start the notices again to ensure they're not rushed into any rash decisions
             window.location.href = window.location.href;
         }
+    }
     </script> -->
 
 
@@ -106,6 +114,12 @@
         <img class="ini-object-depressed" />
         </peanut>
     </accessible-ize:accessibility-object>    
+
+    <accessible-ize:accessibility-object-framework-component-gui-web-frontend-html5-textbox>
+        <span data-pair="accessible-ize:accessibility-object-framework-component-gui-web-frontend-html5-textbox" id="textbox1">
+
+        </span>
+    </accessible-ize:accessibility-object-framework-component-gui-web-frontend-html5-textbox>
 
     <div class="warrior warrior-amend"><!-- Warrior amend class added to ensure warrior is always visible -->
         <img src="https://forums.tomshardware.com/data/avatars/m/2171/2171721.jpg?1550146744" 
