@@ -25,15 +25,15 @@ EnableDebuggingConsole = true;
 
 
 // Basic Accessibility Features
-ShowSteps = false;
-ShowRamp = true;
+ShowSteps = true;
+ShowRamp = false;
 EnableDepressionMode = false;
 DyckslecksiaDetectionSystem = false;
 DenyGender = GenderType.Male;
 
 // Text Customization
 DocumentTitle = "Accessible Website";
-WelcomePageTitle = "Eggs";
+WelcomePageTitle = "The Page Title";
 
 
 //Feature TODO: Amputee

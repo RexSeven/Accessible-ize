@@ -1,4 +1,5 @@
 hasDepression = true;
+dynamicContent;
 
 
 
@@ -29,6 +30,11 @@ if (DyckslecksiaDetectionSystem == true){
 
 $(document).ready(function(){
 
+	if (dynamicContent){
+		$('body').show();
+	}else{
+		alert('Error. You must enable Dynamic Content Generation Module. Page cannot load');
+	}
 
 
 	if (ShowSeeHowThisPageIsMadeFeature == false){
