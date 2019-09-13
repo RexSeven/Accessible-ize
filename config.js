@@ -23,11 +23,14 @@ WebsiteWarrior = WebWarriorMode.Strict;
 // Advanced Developer Features
 EnableDebuggingConsole = true;
 
+// Burka Mode
+BurkaMode = true;
+
 
 // Basic Accessibility Features
 ShowSteps = true;
 ShowRamp = false;
-EnableDepressionMode = false;
+EnableDepressionMode = true;
 DyckslecksiaDetectionSystem = false;
 DenyGender = GenderType.Male;
 

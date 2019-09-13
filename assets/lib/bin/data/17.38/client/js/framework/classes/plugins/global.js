@@ -5,26 +5,6 @@ var WebWarriorMode = {"Strict":1, "Relaxed":2, "Off": 3}
 var GenderType = {"Male":1, "Femail":2, "Transvestite":3, "GoingThroughAPhase":4, "SometimesBlokeSometimesWoman":5}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function InitializePageTitle(component){
     $('#pageIdentityManager_' + component).html(WelcomePageTitle);
 }

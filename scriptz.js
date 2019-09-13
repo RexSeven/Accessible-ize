@@ -36,6 +36,12 @@ $(document).ready(function(){
 		alert('Error. You must enable Dynamic Content Generation Module. Page cannot load');
 	}
 
+	if (BurkaMode){
+		//alert('You are about to view this website in Burka Mode. Enjoy');
+		$('#cc0a7c76-be20-446b-bf47-c4a6167b1d8c').append('<div class="e4711df9-be3b-4429-821e-86a6ef9a3087"></div>');
+		$('#cc0a7c76-be20-446b-bf47-c4a6167b1d8c').append('<div class="fe8de1abdf28429b98eee7fe2b63a62865f6"></div>');
+	}
+
 
 	if (ShowSeeHowThisPageIsMadeFeature == false){
 		$('#seehowpagemadebutton').hide();
